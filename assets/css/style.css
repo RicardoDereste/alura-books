@@ -9,6 +9,7 @@
     --black: #000000;
     --gray: #474646;
     --gray-light: #858585;
+    --red: #D94937;
 }
 
 body {
@@ -268,6 +269,103 @@ body {
     color: var(--blue);
     background: url("../img/Email.svg") no-repeat;
     padding-left: 2em;
+}
+
+/* Form */
+
+.main {
+    width: 50vw;
+    margin: 5em auto 6em auto;
+}
+
+.main-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--orange)
+}
+
+.main-subtitle {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--blue);
+    margin: 3em 0 2em 0;
+}
+
+.field-label {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--blue);
+    margin-left: 1em;
+}
+
+.field-written {
+    border: 1px solid var(--blue);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.form-field {
+    margin: .6em 3em .6em 0;
+
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-button {
+    background: var(--orange);
+    padding: 1em 4em;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    float: right;
+}
+
+.formulario__erro {
+    display: flex;
+    margin-top: .5em;
+    align-items: center;
+}
+
+.erro__imagem {
+    width: 16px;
+    height: 16px;
+    margin: 0 .5em;
+    background-image: url('../img/warning.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.erro__texto {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--red);
+}
+
+/* Register */
+
+.register {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.register-image {
+    display: block;
+    margin: 3em auto 0 auto;
+}
+
+.register-subtitle {
+    margin: 1em 0;
 }
 
 /* Footer */
@@ -532,5 +630,30 @@ hr {
 
     .footer {
         padding: 3em 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 85vw;
+    }
+    
+    .form-button {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .register {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 2em;
+    }
+    
+    .register-image {
+        display: block;
+        margin: 3em auto 0 auto;
+        width: 255px;
+        height: 180px;
     }
 }
